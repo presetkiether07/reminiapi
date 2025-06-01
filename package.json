@@ -1,17 +1,17 @@
 {
-  "name": "remini-api-wrapper",
-  "version": "1.0.0",
-  "description": "Node.js API wrapper using Replicate GFPGAN for photo enhancement",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  ""dependencies": {
-  "axios": "^1.6.0",
-  "dotenv": "^16.0.0",
-  "express": "^4.18.2",
-  "form-data": "^4.0.0",
-  "multer": "^1.4.5-lts.1",
-  "imgbb-uploader": "^1.5.0"
-  }
+  "name": "remini-api-wrapper",
+  "version": "1.0.0",
+  "description": "Node.js API wrapper using Replicate GFPGAN for photo enhancement",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "form-data": "^4.0.0",
+    "multer": "^1.4.5-lts.1",
+    "imgbb-uploader": "^1.5.0"
+  }
 }
