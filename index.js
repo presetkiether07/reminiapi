@@ -3,7 +3,6 @@ const express = require("express");
 const multer = require("multer");
 const axios = require("axios");
 const fs = require("fs");
-const path = require("path");
 const imgbbUploader = require("imgbb-uploader");
 
 const app = express();
@@ -38,7 +37,7 @@ app.post("/enhance", upload.single("image"), async (req, res) => {
 
     const predictionUrl = replicateResponse.data.urls.get;
 
-    // Wait for the final output (simplified: return prediction URL)
+    // Return the prediction URL so user can poll for status
     res.json({ status_url: predictionUrl });
   } catch (error) {
     console.error(error.response?.data || error.message);
@@ -51,5 +50,4 @@ app.get("/", (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT
-                                                               
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
